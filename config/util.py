@@ -21,12 +21,9 @@ ASCII_INTERFACE = """
              ░ ░  ░  ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░       ░       
                ░  ░░ ░       ░  ░  ░    ░ ░           ░     ░  ░      ░   ░    ░  
                    ░                                 ░                            
-
-
                         """
 
 Menu_1 = f"""
-
         ┏━ [ST] Setup                                                             Exit [E] ━┓
         ┣━ [I] Info                                                               Next [N] ━┫
         ┣━ [S] Server ┏━━━━━━━━━━━━━━━━┓              ┏━━━━━━━┓          ┏━━━━━━━━━━━┓      ┃
@@ -37,10 +34,8 @@ Menu_1 = f"""
             ┣━ [03] soon                          ┗━ [08] soon
             ┣━ [04] soon
             ┗━ [05] soon
-
 """
 Menu_2 = f"""
-
         ┏━ [ST] Setup                  Exit [E] ━┓
         ┣━ [I] Info                    Back [B] ━┫
         ┣━ [S] Server ┏━━━━━━━━━━━━━━━━┓         ┃
@@ -54,7 +49,6 @@ Menu_2 = f"""
             ┣━ [16] soon
             ┣━ [17] soon
             ┗━ [18] soon
-
 """
 BANNER = Colorate.Horizontal(Colors.white_to_blue, ASCII_INTERFACE)
 MENU1 = Colorate.Horizontal(Colors.white_to_blue, Menu_1)
