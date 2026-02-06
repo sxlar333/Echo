@@ -80,3 +80,11 @@ def Clear():
         os.system("clear")
 
 menus = [MENU1, MENU2]
+
+def show_banner():
+    clear_screen()
+    print(BANNER)
+    if menu == True:
+        print(MENU1)
+    else:
+        print(MENU2)
