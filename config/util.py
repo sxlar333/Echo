@@ -11,6 +11,9 @@ import random
 import colorama
 from pystyle import Colorate, Colors
 
+menu1 = True
+menu2 = False
+
 ASCII_INTERFACE = """
         ▓█████  ▄████▄   ██░ ██  ▒█████      ██▒   █▓▓█████   ██████ ▒██   ██▒
         ▓█   ▀ ▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒   ▓██░   █▒▓█   ▀ ▒██    ▒ ▒▒ █ █ ▒░
@@ -27,7 +30,7 @@ Menu_1 = f"""
     ┣━ [S] Server ┏━━━━━━━━━━━━━━━━┓              ┏━━━━━━━┓          ┏━━━━━━━━━━━┓      ┃
     ┗━━━┳━━━━━━━━━┫ Discord Tools  ┣━━━━━━━━━━┳━━━┫ Osint ┣━━━━━━━┳━━┫ Web Tools ┣━━━━━━┛
         ┃         ┗━━━━━━━━━━━━━━━━┛          ┃   ┗━━━━━━━┛       ┃  ┗━━━━━━━━━━━┛
-        ┣━ [01] Webhook Spammer               ┣━ [06] soon        ┣━ [09] Web Scanner
+        ┣━ [01] Webhook Spammer               ┣━ [06] user lookup ┣━ [09] Web Scanner
         ┣━ [02] soon                          ┣━ [07] soon        ┗━ [10] Port Scanner (just use nmap bru)
         ┣━ [03] soon                          ┗━ [08] soon
         ┣━ [04] soon
@@ -79,12 +82,13 @@ def Clear():
     elif os_name == "Linux":
         os.system("clear")
 
-menus = [MENU1, MENU2]
-
 def show_banner():
     clear_screen()
     print(BANNER)
-    if menu == True:
+    if menu1 == True:
         print(MENU1)
-    else:
+    elif menu2 == True:
         print(MENU2)
+    else:
+        print("ERROR: No menu true - show_banner()")
+

@@ -1,4 +1,3 @@
-
 import os, sys, subprocess, colorama
 from pystyle import Colorate, Colors
 from config.util import *
@@ -28,6 +27,8 @@ INFO = Colorate.Vertical(Colors.white_to_blue, info)
 
 def command_loop():
     while True:
+        menu1 = True
+        menu2 = False
         user_input = input(f"""
 ┌──({username_pc}@{os_name})─[~/Developer]
 │                      
@@ -74,8 +75,10 @@ def command_loop():
             print(BANNER)
             if menu1 == True:
                 print(MENU1)
-            else:
+            elif menu2 == True:
                 print(MENU2)
+            else:
+                print("ERROR: No menu true - command_loop() - user_input == c")
         
         elif user_input == "n":
             clear_screen()
