@@ -1,6 +1,6 @@
 # ECHO -- A MULTI TOOL WRITTEN IN PYTHON
 Echo is used for a wide range of uses like a swiss army knife
-![Main Menu](images/Screenshot_20260206_204442.png)
+![Main Menu](images/Screenshot_20260213_210240s.png)
 im open to people helping with the development of the project and if you would like to request something to be added please dm me on discord!
 discord: sxlar_.
 
