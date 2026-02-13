@@ -9,8 +9,8 @@ console = Console()
 
 INTERESTING_EXTS = {
     "bak", "old", "zip", "rar", "7z",
-    "sql", "db", "env", "log",
-    "php", "jsp", "asp", "aspx"
+    "sql", "db", "env", "log", "js",
+    "php", "jsp", "asp", "aspx", "py"
 }
 
 INTERESTING_DIRS = {
