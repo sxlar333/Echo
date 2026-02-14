@@ -9,6 +9,8 @@ any bugs report them to me on discord!
 thats all!
 
 
+# NOT TESTED ON WINDOWS FOR BUGS
+
 
 EASY SETUP:
 ```bash
