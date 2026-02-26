@@ -25,8 +25,6 @@ def main():
     print_text_slowly("Returning to main menu...")
 
 def webhookspam():
-    clear()
-
     print_text_slowly("Enter the WebHook you want to spam")
     webhook_prompt = Colorate.Horizontal(Colors.white_to_blue, "WebHook Link -> ")
     webhook = input(webhook_prompt)
@@ -36,7 +34,6 @@ def webhookspam():
     except:
         print_text_slowly("[!] Your WebHook is invalid!")
         time.sleep(2)
-        clear()
         webhookspam()
     
     print_text_slowly("\nEnter the message to spam")
@@ -54,8 +51,6 @@ def webhookspam():
     for x in range(amount):
         threading.Thread(target=spam).start()
         time.sleep(0.1)  
-
-    clear()
     print_text_slowly("[!] Webhook has been correctly spammed")
     input("\nPress ENTER to exit")
     subprocess.run(['python', 'multi-tool.py'])

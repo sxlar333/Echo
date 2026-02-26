@@ -23,6 +23,8 @@ pip install pystyle
 pip install webbrowser
 pip install requests
 pip install discord
+pip install beautifulsoup4
+pip install rich
 
 echo -e "\033[4;32msetup complete, do you wish to run the tool?\033[0m"
 read -p "Press enter to run or ctrl+c to quit"
