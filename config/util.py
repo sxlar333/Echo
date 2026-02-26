@@ -12,7 +12,7 @@ import colorama
 import random
 from pystyle import Colorate, Colors
 
-echo_version = "V1.8"
+echo_version = "V1.8 1/2"
 
 username_pc = os.getlogin()
 tool_path = os.path.dirname(os.path.abspath(__file__)).split("Program\\")[0].split("Program/")[0].strip()
